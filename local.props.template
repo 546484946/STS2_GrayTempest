@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+    <PropertyGroup>
+        <!-- Set your Slay the Spire 2 installation path -->
+        <Sts2Dir>D:\SteamLibrary\steamapps\common\Slay the Spire 2</Sts2Dir>
+        <Sts2DataDir>$(Sts2Dir)\data_sts2_windows_x86_64</Sts2DataDir>
+        <!-- Set your Godot 4.5.1 Mono executable path -->
+        <GodotExe>C:\Users\Administrator\Desktop\Godot_v4.5.1-stable\Godot_v4.5.1-stable_mono_win64\Godot_v4.5.1-stable_mono_win64.exe</GodotExe>
+    </PropertyGroup>
+</Project>

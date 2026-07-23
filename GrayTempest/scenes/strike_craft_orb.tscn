@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://GrayTempest/orbs/strike_craft.png" id="1_qy2aj"]
+
+[node name="StrikeCraftOrb" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+texture = ExtResource("1_qy2aj")
+
+[node name="SpineSkeleton" type="Node2D" parent="."]

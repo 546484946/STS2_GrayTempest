@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdmnlqvc3x0jg"]
+
+[ext_resource type="Texture2D" uid="uid://jg7n26qf7oyo" path="res://GrayTempest/images/character/character_portrait.png" id="1_portrait"]
+
+[node name="GrayTempestCharacter" type="Node2D"]
+
+[node name="Visuals" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(1.9999999, -202)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_portrait")
+
+[node name="Bounds" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 0
+offset_left = -70.0
+offset_top = 30.0
+offset_right = 70.0
+offset_bottom = 60.0
+
+[node name="IntentPos" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -159)
+
+[node name="CenterPos" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -72)
+
+[node name="TalkPos" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -144)

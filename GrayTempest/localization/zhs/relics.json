@@ -1,0 +1,23 @@
+{
+  "GRAY_TEMPEST_RELIC_GRAY_GOO_CORE.title": "纳米机器个体",
+  "GRAY_TEMPEST_RELIC_GRAY_GOO_CORE.description": "每场战斗开始时，获得1点最大生命值，生成1个舰载机单元。",
+  "GRAY_TEMPEST_RELIC_GRAY_GOO_CORE.flavor": "纳米集群的基本单位，能够自我复制。",
+  "GRAY_TEMPEST_RELIC_SHIELD_RELIC.title": "护盾发生器",
+  "GRAY_TEMPEST_RELIC_SHIELD_RELIC.description": "战斗开始时，获得1点[gold]集中[/gold]并生成{Counter}个护盾生成单元。",
+  "GRAY_TEMPEST_RELIC_SHIELD_RELIC.flavor": "硬化纳米护盾矩阵。",
+  "GRAY_TEMPEST_RELIC_ARMOR_RELIC.title": "装甲",
+  "GRAY_TEMPEST_RELIC_ARMOR_RELIC.description": "战斗开始时获得覆甲。当前升级等级{Counter}。",
+  "GRAY_TEMPEST_RELIC_ARMOR_RELIC.flavor": "经无数循环强化后的纳米装甲。",
+  "GRAY_TEMPEST_RELIC_REACTOR_RELIC.title": "反应堆",
+  "GRAY_TEMPEST_RELIC_REACTOR_RELIC.description": "你的前{Counter}个回合开始时，将1张冗余加入手牌。",
+  "GRAY_TEMPEST_RELIC_REACTOR_RELIC.flavor": "微型纳米反应堆。",
+  "GRAY_TEMPEST_RELIC_STRIKE_CRAFT_RELIC.title": "舰载机",
+  "GRAY_TEMPEST_RELIC_STRIKE_CRAFT_RELIC.description": "战斗开始时，增加{Counter}个充能球位并生成{Counter}个舰载机单元。",
+  "GRAY_TEMPEST_RELIC_STRIKE_CRAFT_RELIC.flavor": "纳米舰载机群。",
+  "GRAY_TEMPEST_RELIC_THRUSTER_RELIC.title": "推进器",
+  "GRAY_TEMPEST_RELIC_THRUSTER_RELIC.description": "战斗开始时，获得{Counter}点力量和{Counter}点敏捷。",
+  "GRAY_TEMPEST_RELIC_THRUSTER_RELIC.flavor": "纳米推进系统。",
+  "GRAY_TEMPEST_RELIC_GRAY_GOO_CORE_PLUS.title": "纳米机器个体+",
+  "GRAY_TEMPEST_RELIC_GRAY_GOO_CORE_PLUS.description": "每场战斗开始时，获得3点最大生命值、3层[gold]人工制品[/gold]，并生成每种单元各1个。",
+  "GRAY_TEMPEST_RELIC_GRAY_GOO_CORE_PLUS.flavor": "经古老触手改造后的纳米集群。"
+}

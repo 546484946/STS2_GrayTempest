@@ -1,0 +1,15 @@
+{
+  "GRAY_TEMPEST_CHARACTER_GRAY_TEMPEST_CHARACTER.title": "The Gray Tempest",
+  "GRAY_TEMPEST_CHARACTER_GRAY_TEMPEST_CHARACTER.titleObject": "The Gray Tempest",
+  "GRAY_TEMPEST_CHARACTER_GRAY_TEMPEST_CHARACTER.description": "A nanite swarm from the L-Gate, capable of reconstructing weapons by consuming its own mass.",
+  "GRAY_TEMPEST_CHARACTER_GRAY_TEMPEST_CHARACTER.flavor": "They consume everything, pouring through the L-Gate, transforming worlds into nanite worlds.",
+  "GRAY_TEMPEST_CHARACTER_GRAY_TEMPEST_CHARACTER.selectMessage": "Mass reserves sufficient. Begin reconstruction.",
+  "GRAY_TEMPEST_CHARACTER_GRAY_TEMPEST_CHARACTER.victoryMessage": "This sector has been fully converted.",
+  "GRAY_TEMPEST_CHARACTER_GRAY_TEMPEST_CHARACTER.defeatMessage": "Swarm damaged... require more mass.",
+  "GRAY_TEMPEST_CHARACTER_GRAY_TEMPEST_CHARACTER.pronounObject": "it",
+  "GRAY_TEMPEST_CHARACTER_GRAY_TEMPEST_CHARACTER.pronounSubject": "it",
+  "GRAY_TEMPEST_CHARACTER_GRAY_TEMPEST_CHARACTER.possessiveAdjective": "its",
+  "GRAY_TEMPEST_CHARACTER_GRAY_TEMPEST_CHARACTER.pronounPossessive": "its",
+  "GRAY_TEMPEST_CHARACTER_GRAY_TEMPEST_CHARACTER.goldMonologue": "This mineral can be used for research upgrades.",
+  "GRAY_TEMPEST_CHARACTER_GRAY_TEMPEST_CHARACTER.unlockText": "Win a run as Ironclad to unlock The Gray Tempest."
+}

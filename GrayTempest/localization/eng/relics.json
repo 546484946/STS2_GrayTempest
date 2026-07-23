@@ -1,0 +1,23 @@
+{
+  "GRAY_TEMPEST_RELIC_GRAY_GOO_CORE.title": "Nanite Machine Individual",
+  "GRAY_TEMPEST_RELIC_GRAY_GOO_CORE.description": "At the start of each combat, gain 1 Max HP. Channel 1 Strike Craft Unit.",
+  "GRAY_TEMPEST_RELIC_GRAY_GOO_CORE.flavor": "The basic unit of the nanite swarm, capable of self-replication.",
+  "GRAY_TEMPEST_RELIC_SHIELD_RELIC.title": "Shield Generator",
+  "GRAY_TEMPEST_RELIC_SHIELD_RELIC.description": "At the start of combat, gain 1 [gold]Focus[/gold] and Channel {Counter} Shield Generator Unit(s).",
+  "GRAY_TEMPEST_RELIC_SHIELD_RELIC.flavor": "A hardened nanite shield matrix.",
+  "GRAY_TEMPEST_RELIC_ARMOR_RELIC.title": "Armor",
+  "GRAY_TEMPEST_RELIC_ARMOR_RELIC.description": "At the start of combat, gain Plating Armor. Upgrade level {Counter}.",
+  "GRAY_TEMPEST_RELIC_ARMOR_RELIC.flavor": "Nanite plating reinforced over countless cycles.",
+  "GRAY_TEMPEST_RELIC_REACTOR_RELIC.title": "Reactor",
+  "GRAY_TEMPEST_RELIC_REACTOR_RELIC.description": "At the start of each of your first {Counter} turns, add 1 Redundancy to your hand.",
+  "GRAY_TEMPEST_RELIC_REACTOR_RELIC.flavor": "A miniature nanite reactor.",
+  "GRAY_TEMPEST_RELIC_STRIKE_CRAFT_RELIC.title": "Strike Craft",
+  "GRAY_TEMPEST_RELIC_STRIKE_CRAFT_RELIC.description": "At the start of combat, gain {Counter} Orb Slot{Counter:SlotPlural} and Channel {Counter} Strike Craft Unit{Counter:StrikeCraftPlural}.",
+  "GRAY_TEMPEST_RELIC_STRIKE_CRAFT_RELIC.flavor": "Nanite strike craft swarm.",
+  "GRAY_TEMPEST_RELIC_THRUSTER_RELIC.title": "Thruster",
+  "GRAY_TEMPEST_RELIC_THRUSTER_RELIC.description": "At the start of combat, gain {Counter} Strength and {Counter} Dexterity.",
+  "GRAY_TEMPEST_RELIC_THRUSTER_RELIC.flavor": "Nanite propulsion system.",
+  "GRAY_TEMPEST_RELIC_GRAY_GOO_CORE_PLUS.title": "Nanite Machine Individual+",
+  "GRAY_TEMPEST_RELIC_GRAY_GOO_CORE_PLUS.description": "At the start of each combat, gain 3 Max HP, 3 [gold]Artifact[/gold], and Channel 1 of each Unit type.",
+  "GRAY_TEMPEST_RELIC_GRAY_GOO_CORE_PLUS.flavor": "The nanite swarm, refined by an ancient touch."
+}

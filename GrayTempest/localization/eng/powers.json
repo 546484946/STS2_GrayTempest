@@ -1,0 +1,20 @@
+{
+  "GRAY_TEMPEST_POWER_EFFICIENT_RECONSTRUCT_POWER.title": "Efficient Reconstruct",
+  "GRAY_TEMPEST_POWER_EFFICIENT_RECONSTRUCT_POWER.description": "Gain Max HP when reconstructing.",
+  "GRAY_TEMPEST_POWER_EFFICIENT_RECONSTRUCT_POWER.smartDescription": "Gain [blue]{Amount}[/blue] Max HP when reconstructing.",
+  "GRAY_TEMPEST_POWER_ARMAGEDDON_POWER.title": "Armageddon",
+  "GRAY_TEMPEST_POWER_ARMAGEDDON_POWER.description": "Orbital Bombardment Units deal multiplied damage.",
+  "GRAY_TEMPEST_POWER_ARMAGEDDON_POWER.smartDescription": "Orbital Bombardment Units deal [blue]{Amount}%[/blue] extra damage.",
+  "GRAY_TEMPEST_POWER_SUSTAINED_BOMBARDMENT_POWER.title": "Sustained Bombardment",
+  "GRAY_TEMPEST_POWER_SUSTAINED_BOMBARDMENT_POWER.description": "At the start of your turn, Channel 1 Orbital Bombardment Unit.",
+  "GRAY_TEMPEST_POWER_SUSTAINED_BOMBARDMENT_POWER.smartDescription": "At the start of your turn, Channel 1 Orbital Bombardment Unit.",
+  "GRAY_TEMPEST_POWER_TEMPORARY_ASSEMBLY_POWER.title": "Temporary Assembly",
+  "GRAY_TEMPEST_POWER_TEMPORARY_ASSEMBLY_POWER.description": "At the end of combat, add a random One-Shot card to your deck.",
+  "GRAY_TEMPEST_POWER_TEMPORARY_ASSEMBLY_POWER.smartDescription": "At the end of combat, add a random [gold]One-Shot[/gold] card to your deck.",
+  "GRAY_TEMPEST_POWER_ADJUSTMENT_POWER.title": "Adjustment",
+  "GRAY_TEMPEST_POWER_ADJUSTMENT_POWER.description": "Increased hand size. Draw extra cards each turn.",
+  "GRAY_TEMPEST_POWER_ADJUSTMENT_POWER.smartDescription": "Hand size +1. At the start of your turn, draw [blue]{Amount}[/blue] additional card{Amount:Plural}.",
+  "GRAY_TEMPEST_POWER_COLOSSUS_PROJECT_POWER.title": "Colossus Project",
+  "GRAY_TEMPEST_POWER_COLOSSUS_PROJECT_POWER.description": "After your next turn ends, win the battle.",
+  "GRAY_TEMPEST_POWER_COLOSSUS_PROJECT_POWER.smartDescription": "After your next turn ends, [gold]win the battle[/gold]."
+}

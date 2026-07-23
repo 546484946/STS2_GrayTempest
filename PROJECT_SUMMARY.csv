@@ -1,0 +1,107 @@
+Category,Key,Value
+Meta,ModId,GrayTempest
+Meta,Version,0.1.0
+Meta,Name,灰蛊 (The Gray Tempest)
+Meta,Framework,STS2-RitsuLib v0.4.54
+Meta,Game,Slay the Spire 2 (min v0.108.0)
+Meta,SDK,Godot.NET.Sdk/4.5.1 .NET 10.0
+Meta,Type,Character mod (has_pck + has_dll)
+Meta,Dependencies,STS2-RitsuLib (>=0.4.48)
+Meta,ModEntry,Scripts/Entry.cs [ModInitializer]
+Meta,Bootstrap,Register Godot scripts -> Content discovery -> I18N (zhs primary/eng fallback) -> 5 LocTableBridges -> Harmony PatchAll -> ScriptManagerBridge
+
+Character,Class,GrayTempestCharacter
+Character,Namespace,GrayTempest.Character
+Character,HP,50
+Character,Gold,99
+Character,OrbSlots,5
+Character,Gender,Neutral
+Character,Color,#808080
+Character,EnergyColor,graytempest
+Character,AttackDelay,0.15
+Character,CastDelay,0.25
+Character,BaseProfile,CharacterAssetProfiles.Ironclad()
+Character,VisualsScene,scenes/graytempest_character.tscn
+Character,EnergyCounterScene,scenes/graytempest_energy_counter.tscn
+Character,MerchantScene,scenes/graytempest_merchant.tscn
+Character,RestSiteScene,scenes/graytempest_rest_site.tscn
+Character,SelectBgScene,scenes/graytempest_select_bg.tscn
+Character,Icon,images/character_icon.png
+Character,SelectIcon,images/char_select.png
+Character,StarterRelic,GrayGooCore
+Character,StarterDeck,4xStrike 4xDefend 1xNaniteSynthesis 1xStrikeCraftDirective
+Character,Unlock,"Win as Ironclad"
+
+Pool,MainCardPool,GrayTempestCardPool (blue frame, gray)
+Pool,CraftingCardPool,GrayTempestCraftingCardPool (shared, for Reconstruct)
+Pool,RelicPool,GrayTempestRelicPool
+Pool,SharedRelicPool,GrayTempestSharedRelicPool
+Pool,PotionPool,GrayTempestPotionPool
+
+Card,Strike,Basic|1|Attack|AnyEnemy|Deal 6 dmg|Upg:+3
+Card,Defend,Basic|1|Skill|Self|Gain 5 Block|Upg:+3|GainsBlock
+Card,NaniteSynthesis,Basic|2|Skill|Self|Reconstruct 5|Keywords:Exhaust,Reconstruct|Upg:remove Exhaust
+Card,StrikeCraftDirective (Battle Directive),Basic|1|Skill|Self|Gain 6 Block+trigger all orb passives|Upg:+4 Block+draw 1|Portrait:strike_craft_directive
+Card,FieldImprove,Common|2(1)|Skill|Self|Improve a card in hand (gold cost)|Keywords:Exhaust,ImproveAction|Upg:cost 1 remove Exhaust
+Card,SimpleMissile,Common|0|Attack|AllEnemies|Deal 20 dmg to all+remove from deck|Keywords:Exhaust,OneShot,Burst,ImproveCost(10)|Upg:+25(45 total)
+Card,SimpleShieldGenerator,Common|0|Skill|Self|Gain 8 Block+channel 1 ShieldGen(3 upg)+remove deck|Keywords:Exhaust,Retain,OneShot,ImproveCost(10)|Upg:+12 Block(20 total)
+Card,Recycling,Uncommon|1(0)|Skill|Self|Recycle a card from hand|Keywords:Exhaust,Recycle|Upg:cost 0 remove Exhaust add Retain
+Card,Decomposition,Uncommon|1|Skill|Self|Recycle ALL Status+Curse in hand|Keywords:Exhaust,Recycle|Upg:remove Exhaust add Retain
+Card,FieldUpgrade,Uncommon|3(0)|Skill|Self|Perma-upgrade a card(hand+deck).Handles IMultiUpgradable|Keywords:Exhaust,OneShot|Upg:cost 0 Retain remove Exhaust
+Card,TemporaryAssembly,Uncommon|2(1)|Power|Self|At combat end add random OneShot card to deck|Power:TemporaryAssemblyPower|Upg:cost 1
+Card,Assimilate,Rare|2(1)|Attack|AnyEnemy|Deal 4(8) dmg,125% vs blocked.Kill=gain Max HP=dmg dealt|Keywords:Exhaust,Kinetic|Upg:cost 1 +4 dmg
+Card,EfficientReconstruct,Rare|2(1)|Power|Self|Gain 2(3) stacks:when Reconstruct played gain Amount Max HP|Power:EfficientReconstructPower|Upg:cost 1 Innate Amount+1
+Card,TargetedSearch,Rare|1|Skill|Self|Draw 1+pick 1 from draw pile+1 from discard to hand|Keywords:Exhaust|Upg:remove Exhaust add Innate
+
+CardPool,Laser,Pool|1|Attack|AnyEnemy|Deal 9 dmg(125% vs unblocked).MultiUpgrade x4|Keywords:Recyclable(5),ImproveCost(8),MultiUpgrade(4),Energy|FakeUpgrade:+9 dmg +8 ImproveCost
+CardPool,KineticCannon,Pool|1|Attack|AnyEnemy|Deal 4 dmg x2 hits(125% vs blocked).MultiUpgrade x4|Keywords:Recyclable(5),ImproveCost(8),MultiUpgrade(4),Kinetic|FakeUpgrade:+4 dmg +8 ImproveCost
+CardPool,Missile,Pool|1|Attack|AllEnemies|Deal 8 dmg to all.MultiUpgrade x4|Keywords:Recyclable(5),ImproveCost(8),MultiUpgrade(4),Burst|FakeUpgrade:+8 dmg +8 ImproveCost
+
+Orb,BasicStrikeCraftOrb,"[RegisterOrb]|DarkenedColor:(0.2,0.2,0.2)|Passive:4(modified)->deal to ALL enemies|Evoke:10(modified)->+1 Vulnerable+damage ALL|Icon:strike_craft.png"
+Orb,ShieldGeneratorNode,"[RegisterOrb]|DarkenedColor:(0.5,0.7,0.9)|Passive:3(modified)->gain Block|Evoke:7(modified)->gain Block|Icon:shield_generator.png"
+
+Relic,GrayGooCore (Nanite Machine Individual),Starter|Turn 1:gain 1 Max HP+Channel 1 BasicStrikeCraft
+Relic,GrayGooCore Registration,"[RegisterRelic(GrayTempestRelicPool)][RegisterRelic(GrayTempestSharedRelicPool)][RegisterCharacterStarterRelic(GrayTempestCharacter)]"
+
+Power,EfficientReconstructPower,"[RegisterPower]|Buff|Counter|AfterCardPlayed(Reconstruct card)->gain Amount Max HP"
+Power,TemporaryAssemblyPower,"[RegisterPower]|Buff|Counter|AfterCombatEnd(CombatRoom)->add random OneShot card to player deck"
+
+Keyword,Reconstruct,"Lose Max HP, choose from Nanite Armory. Localized:GRAY_TEMPEST_KEYWORD_RECONSTRUCT"
+Keyword,Recyclable,"When recycled provides Max HP. Localized:GRAY_TEMPEST_KEYWORD_RECYCLABLE"
+Keyword,Recycle,"Exhaust+remove from deck, gain Max HP. Localized:GRAY_TEMPEST_KEYWORD_RECYCLE"
+Keyword,OneShot,"When played, exhaust+remove from deck. MUST pair with CardKeyword.Exhaust. Localized:GRAY_TEMPEST_KEYWORD_ONE_SHOT"
+Keyword,ImproveAction,"Perma-upgrade card spending gold. Localized:GRAY_TEMPEST_KEYWORD_IMPROVE_ACTION"
+Keyword,ImproveCost,"Gold cost to improve this card. Localized:GRAY_TEMPEST_KEYWORD_IMPROVE_COST"
+Keyword,MultiUpgrade,"Can be improved multiple times. Localized:GRAY_TEMPEST_KEYWORD_MULTI_UPGRADE"
+Keyword,Nanite,"Stacking counter on enemies. Localized:GRAY_TEMPEST_KEYWORD_NANITE"
+Keyword,Energy,"25% more dmg vs unblocked enemies. Localized:GRAY_TEMPEST_KEYWORD_ENERGY"
+Keyword,Kinetic,"25% more dmg vs blocked enemies. Localized:GRAY_TEMPEST_KEYWORD_KINETIC"
+Keyword,Burst,"Deals dmg to ALL enemies. Localized:GRAY_TEMPEST_KEYWORD_BURST"
+
+System,ImproveSystem,ImproveCard(context,card,owner):deduct gold->if IMultiUpgradable call FakeUpgrade()->else CardCmd.Upgrade().Both hand+deck versions
+System,RecycleSystem,RecycleCard(context,card,owner):gain 2 Max HP->remove from state
+System,ReconstructCmd,Execute(context,sourceCard):lose 5 Max HP->pick 1 of 3 random from ReconstructCardPool->add to hand+deck
+System,ReconstructCardPool,GetPoolFactories(5)->[Laser,KineticCannon,Missile]
+System,OneShotCardPool,Static pool of registered OneShot card Types.Register<T>().Init:SimpleMissile+SimpleShieldGenerator
+
+API,DamageCmd,"Attack(decimal).FromCard(card,play).Targeting(creature).TargetingAllOpponents(state).WithHitFx(string).WithHitCount(int).Execute(context)"
+API,CardPileCmd,"Draw(context,amount,owner,shuffle).Add(cards|card,pile|PileType,position,...).RemoveFromDeck(dv,bool).AddGeneratedCardToCombat(card,pile,owner)"
+API,CardSelectCmd,"FromHand(context,owner,prefs,filter,source).FromCombatPile(context,pile,owner,prefs).FromSimpleGrid(context,cards,owner,prefs).FromDeckForUpgrade(owner,prefs)"
+API,CardCmd,"Exhaust(context,card).Upgrade(card,style).Transform(transformations,null).Discard(card).DiscardAndDraw(context,cards,count)"
+API,CreatureCmd,"GainBlock(creature,amount,play).GainMaxHp(creature,amount).LoseMaxHp(context,creature,amount,...).Damage(context,targets,value,prop,source)"
+API,OrbCmd,"Channel<T>(context,owner).Passive(context,orb,target,fromEvoke)"
+API,PowerCmd,"Apply<T>(context,target,amount,source,cardPlay)"
+API,PlayerCmd,"LoseGold(amount,owner,lossType)"
+API,VfxCmd,"PlayOnCreature(creature,vfxPath)"
+API,CardPile,".GetPile(owner)->cards list.PileType:Hand,Draw,Discard,Exhaust"
+API,Card,".DeckVersion->deck counterpart..CanonicalKeywords..DynamicVars[]..CardPile (settable)..IsUpgraded..MaxUpgradeLevel"
+API,Creature,".Block.CurrentHp.IsDead.CombatState"
+API,CardSelectorPrefs,"new(LocString,prompt,selectCount)|new(LocString,minCount,maxCount)"
+API,CardPilePosition,None|Bottom|Top|Random
+
+Patch,CardPortraitPatch,"Harmony postfix on CardModel.PortraitPath getter. 14 custom portraits + GrayTempest namespace fallback to placeholder.png"
+
+TBD,SpineSkeletonError,"Known non-fatal:Expected SpineSprite but got Node2D in orb scenes.Node2D kept as-is."
+TBD,Localization,JSON files in GrayTempest/localization/{eng,zhs}/.5 tables bridged:cards,card_keywords,characters,relics,powers
+TBD,OrbSFX,ChannelSfx/PassiveSfx/EvokeSfx overridden to null in both orbs to avoid missing audio errors
+TBD,PathConstants,GrayTempestConst.Paths has ~30 path constants for images,scenes,orbs,relics,cards

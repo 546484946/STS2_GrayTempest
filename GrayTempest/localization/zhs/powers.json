@@ -1,0 +1,20 @@
+{
+  "GRAY_TEMPEST_POWER_EFFICIENT_RECONSTRUCT_POWER.title": "高效重组",
+  "GRAY_TEMPEST_POWER_EFFICIENT_RECONSTRUCT_POWER.description": "重组时获得[gold]最大生命值[/gold]。",
+  "GRAY_TEMPEST_POWER_EFFICIENT_RECONSTRUCT_POWER.smartDescription": "重组时获得[blue]{Amount}[/blue]点[gold]最大生命值[/gold]。",
+  "GRAY_TEMPEST_POWER_ARMAGEDDON_POWER.title": "末日审判",
+  "GRAY_TEMPEST_POWER_ARMAGEDDON_POWER.description": "轨道轰炸单元造成[gold]额外百分比伤害[/gold]。",
+  "GRAY_TEMPEST_POWER_ARMAGEDDON_POWER.smartDescription": "轨道轰炸单元额外造成[blue]{Amount}%[/blue]伤害。",
+  "GRAY_TEMPEST_POWER_SUSTAINED_BOMBARDMENT_POWER.title": "持续轰炸",
+  "GRAY_TEMPEST_POWER_SUSTAINED_BOMBARDMENT_POWER.description": "回合开始时，生成1个轨道轰炸单元。",
+  "GRAY_TEMPEST_POWER_SUSTAINED_BOMBARDMENT_POWER.smartDescription": "回合开始时，生成1个轨道轰炸单元。",
+  "GRAY_TEMPEST_POWER_TEMPORARY_ASSEMBLY_POWER.title": "临时组装",
+  "GRAY_TEMPEST_POWER_TEMPORARY_ASSEMBLY_POWER.description": "战斗结束后，将一张随机一次性牌加入牌组。",
+  "GRAY_TEMPEST_POWER_TEMPORARY_ASSEMBLY_POWER.smartDescription": "战斗结束后，将一张随机[gold]一次性[/gold]牌加入牌组。",
+  "GRAY_TEMPEST_POWER_ADJUSTMENT_POWER.title": "调整",
+  "GRAY_TEMPEST_POWER_ADJUSTMENT_POWER.description": "手牌上限增加，每回合多抽牌。",
+  "GRAY_TEMPEST_POWER_ADJUSTMENT_POWER.smartDescription": "手牌上限+1。回合开始时多抽[blue]{Amount}[/blue]张牌。",
+  "GRAY_TEMPEST_POWER_COLOSSUS_PROJECT_POWER.title": "巨像计划",
+  "GRAY_TEMPEST_POWER_COLOSSUS_PROJECT_POWER.description": "下回合结束后获得战斗胜利。",
+  "GRAY_TEMPEST_POWER_COLOSSUS_PROJECT_POWER.smartDescription": "下回合结束后[gold]获得战斗胜利[/gold]。"
+}

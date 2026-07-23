@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://GrayTempest/images/character/character_portrait.png" id="1_portrait"]
+
+[node name="GrayTempestMerchant" type="Node2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_portrait")

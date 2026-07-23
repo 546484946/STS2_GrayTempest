@@ -1,0 +1,17 @@
+{
+  "id": "GrayTempest",
+  "name": "灰蛊 (The Gray Tempest)",
+  "author": "",
+  "description": "基于 Stellaris 灰蛊风暴主题的杀戮尖塔2角色模组。引入重组、回收、研究、舰载机等新机制。\nA Slay the Spire 2 character mod based on Stellaris's Gray Tempest. Features Reconstruct, Recycle, Research, and Strike Craft mechanics.",
+  "version": "0.1.1",
+  "min_game_version": "0.108.0",
+  "has_pck": true,
+  "has_dll": true,
+  "affects_gameplay": true,
+  "dependencies": [
+    {
+      "id": "STS2-RitsuLib",
+      "min_version": "0.4.48"
+    }
+  ]
+}

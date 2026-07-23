@@ -1,0 +1,11 @@
+﻿{
+  "GRAY_TEMPEST_ORB_BASIC_STRIKE_CRAFT_ORB.title": "舰载机单元",
+  "GRAY_TEMPEST_ORB_BASIC_STRIKE_CRAFT_ORB.description": "充能球：回合结束时造成全体伤害。",
+  "GRAY_TEMPEST_ORB_BASIC_STRIKE_CRAFT_ORB.smartDescription": "[gold]被动：[/gold]回合结束时对所有敌人造成[blue]{Passive}[/blue]点伤害。\n[gold]激发：[/gold]对所有敌人施加1层[gold]易伤[/gold]并造成[blue]{Evoke}[/blue]点伤害。",
+  "GRAY_TEMPEST_ORB_SHIELD_GENERATOR_NODE.title": "护盾生成单元",
+  "GRAY_TEMPEST_ORB_SHIELD_GENERATOR_NODE.description": "充能球：回合结束时获得格挡。",
+  "GRAY_TEMPEST_ORB_SHIELD_GENERATOR_NODE.smartDescription": "[gold]被动：[/gold]回合结束时获得[blue]{Passive}[/blue]点格挡。\n[gold]激发：[/gold]获得[blue]{Evoke}[/blue]点格挡。",
+  "GRAY_TEMPEST_ORB_ORBITAL_BOMBARDMENT_UNIT.title": "轨道轰炸单元",
+  "GRAY_TEMPEST_ORB_ORBITAL_BOMBARDMENT_UNIT.description": "充能球：每回合增加伤害。激发时造成全体伤害。",
+  "GRAY_TEMPEST_ORB_ORBITAL_BOMBARDMENT_UNIT.smartDescription": "[gold]被动：[/gold]本单元激发伤害增加[blue]{Passive}[/blue]点。\n[gold]激发：[/gold]对所有敌人造成[blue]{Evoke}[/blue]点伤害。另一个轨道轰炸单元获得等量伤害加成。"
+}

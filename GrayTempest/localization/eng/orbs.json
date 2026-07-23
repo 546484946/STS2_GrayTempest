@@ -1,0 +1,11 @@
+﻿{
+  "GRAY_TEMPEST_ORB_BASIC_STRIKE_CRAFT_ORB.title": "Strike Craft Unit",
+  "GRAY_TEMPEST_ORB_BASIC_STRIKE_CRAFT_ORB.description": "Orb: Deal damage to ALL enemies at end of turn.",
+  "GRAY_TEMPEST_ORB_BASIC_STRIKE_CRAFT_ORB.smartDescription": "[gold]Passive:[/gold] At end of turn, deal [blue]{Passive}[/blue] damage to ALL enemies.\n[gold]Evoke:[/gold] Apply 1 [gold]Vulnerable[/gold] to ALL enemies and deal [blue]{Evoke}[/blue] damage.",
+  "GRAY_TEMPEST_ORB_SHIELD_GENERATOR_NODE.title": "Shield Generator Unit",
+  "GRAY_TEMPEST_ORB_SHIELD_GENERATOR_NODE.description": "Orb: Gain Block at end of turn.",
+  "GRAY_TEMPEST_ORB_SHIELD_GENERATOR_NODE.smartDescription": "[gold]Passive:[/gold] At end of turn, gain [blue]{Passive}[/blue] Block.\n[gold]Evoke:[/gold] Gain [blue]{Evoke}[/blue] Block.",
+  "GRAY_TEMPEST_ORB_ORBITAL_BOMBARDMENT_UNIT.title": "Orbital Bombardment Unit",
+  "GRAY_TEMPEST_ORB_ORBITAL_BOMBARDMENT_UNIT.description": "Orb: Increases damage each turn. Deals damage to ALL enemies when Evoked.",
+  "GRAY_TEMPEST_ORB_ORBITAL_BOMBARDMENT_UNIT.smartDescription": "[gold]Passive:[/gold] Increase this orb's Evoke damage by [blue]{Passive}[/blue].\n[gold]Evoke:[/gold] Deal [blue]{Evoke}[/blue] damage to ALL enemies. Another Orbital Bombardment Unit gains equal damage."
+}
